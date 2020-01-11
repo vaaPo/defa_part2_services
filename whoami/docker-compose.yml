@@ -1,0 +1,11 @@
+version: '3.5'  
+
+services: 
+    whoami: 
+      image: jwilder/whoami 
+      ports: 
+        - 8000
+
+# port 8000:8000 will cause port clash by nailing down the public port on host to 8000
+# for the scaled we need only the internal
+
