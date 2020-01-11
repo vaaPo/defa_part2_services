@@ -1,0 +1,16 @@
+version: '3.5' 
+
+# ports removed from whoami
+# socket volume for nginx in read-only
+
+services: 
+    whoami: 
+      image: jwilder/whoami 
+      environment: 
+       - VIRTUAL_HOST=whoami.colasloth.com 
+    proxy: 
+      image: jwilder/nginx-proxy 
+      volumes: 
+        - /var/run/docker.sock:/tmp/docker.sock:ro 
+      ports: 
+        - 80:80 
