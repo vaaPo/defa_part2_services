@@ -131,3 +131,15 @@ Services from the part2 materials https://devopswithdocker.com/part2/
     paavo@silber:~/defa/courseware/part2/defa_part2_services/proxied_whoami$ curl whoami.colasloth.com 
     I'm 22e68b1b26cf
     
+# Add more content to proxied services on the fly
+
+    $ echo "hello" > hello.html
+    $ echo "world" > world.html 
+    Fix the docker-compose.yml to contain hello and world services.
+    $ docker-compose up -d --scale whoami=3 
+    $ curl hello.colasloth.com 
+    hello
+
+    $ echo "hello, this really rocks" > hello.html
+    $ curl hello.colasloth.com 
+    hello, this really rocks

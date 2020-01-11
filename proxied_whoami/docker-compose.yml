@@ -8,6 +8,18 @@ services:
       image: jwilder/whoami 
       environment: 
        - VIRTUAL_HOST=whoami.colasloth.com 
+    hello: 
+      image: nginx 
+      volumes: 
+        - ./hello.html:/usr/share/nginx/html/index.html:ro 
+      environment: 
+        - VIRTUAL_HOST=hello.colasloth.com 
+    world: 
+      image: nginx 
+      volumes: 
+        - ./world.html:/usr/share/nginx/html/index.html:ro 
+      environment: 
+        - VIRTUAL_HOST=world.colasloth.com 
     proxy: 
       image: jwilder/nginx-proxy 
       volumes: 
