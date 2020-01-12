@@ -151,4 +151,21 @@ Services from the part2 materials https://devopswithdocker.com/part2/
     https://hub.docker.com/_/postgres
     https://hub.docker.com/_/adminer
 
+    $ docker-compose up
+    $ docker inspect db_redmine | grep -A 5 Mounts
+            "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "5a475ce38849128b22014c96965ae3c99fef7b7c476bb83b3243562d06f6ebad",
+                "Source": "/var/lib/docker/volumes/5a475ce38849128b22014c96965ae3c99fef7b7c476bb83b3243562d06f6ebad/_data",
+                "Destination": "/var/lib/postgresql/data",
+    $ docker volume ls
+    $ docker volume ls | grep 6ebad
+    local               5a475ce38849128b22014c96965ae3c99fef7b7c476bb83b3243562d06f6ebad
+    $ docker volume prune
+    WARNING! This will remove all local volumes not used by at least one container.
+    Are you sure you want to continue? [y/N] 
+    ....
+    Total reclaimed space: 442.7MB
+
     

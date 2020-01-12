@@ -7,6 +7,11 @@ services:
     environment:
       POSTGRES_PASSWORD: example
     container_name: db_redmine
+    volumes:
+        - database:/var/lib/postgresql/data
+  
+  volumes:
+    database:
 # restart: always was changed to unless-stopped 
 # that will keep the container running unless it’s stopped.
 # With always the stopped container is started after reboot for example.
