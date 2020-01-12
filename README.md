@@ -167,5 +167,23 @@ Services from the part2 materials https://devopswithdocker.com/part2/
     Are you sure you want to continue? [y/N] 
     ....
     Total reclaimed space: 442.7MB
+    $ docker volume ls 
+    DRIVER              VOLUME NAME
+    local               0e5faf03fe5c2a64e3dd407f54f49664b599a200c543d163b50d32d4ebf51d20
+    local               4bcb28899a0fb139205d23a5b30ed0bb27e7421dbda88b7d4077158ffa12d110
+    local               4288bfda548f6cdab8f86553332f2394c67072547da986e08e1e85c93be96c28
+    local               7520a0172f42ea76568f5d53d2bacea9dfe0cb67e8cea952c78ca2a7c3721457
+    local               62047b84cda9f7eb7892f1da661c53160f993c27778cb7909c9112a23935ece0
+    local               acdf88938531c5faf7fd03180053f10f9872f2ed095b3127183540742a9f8835
+    local               af3e1b27338bd280de36dc541e083938cb00d99aaee9a95d35aedfd853e87c05
+    local               cb55803662002383125d55c5858351944c70a1b3ae7c460826fa4366bbfd138a
+    local               ccbed1de47c4739b542e6b8f1a768429cd203a68a35a0adfcef9030daf39c965
+    local               d9c398babdfec817333fbdf088fdb8734533a3304e465c5faf2059ce712a6e20
+    local               d44df5a229b80836493b6b2f3aea9a5c3153ba8130e2414d096fc9f26f8770df
+    local               da5dc088b84043ee45edbb3fe17a07e915556737f62131a168c7b26251fb36dd
+    local               dist
+    local               ea3948e27991df7d5440f5e2e1942d74a4a65c97d592039cc01ea4e8cf5d38ae
+    local               f251cc0b4fda6282507ba35a1ed7540b95e3d9d3b763dbabe397a84a87c7e01b
+    local               redmine_database
+    local               src
 
-    
