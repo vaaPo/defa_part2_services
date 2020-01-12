@@ -187,3 +187,9 @@ Services from the part2 materials https://devopswithdocker.com/part2/
     local               redmine_database
     local               src
 
+    After adding 2 volumes amd redmine:
+    $ docker volume ls | grep red0
+    local               redmine_database
+    local               redmine_files
+
+    Surf to http://localhost:9999/
