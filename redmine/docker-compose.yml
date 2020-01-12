@@ -10,8 +10,8 @@ services:
     volumes:
         - database:/var/lib/postgresql/data
   
-  volumes:
-    database:
+volumes:
+  database:
 # restart: always was changed to unless-stopped 
 # that will keep the container running unless it’s stopped.
 # With always the stopped container is started after reboot for example.
