@@ -143,3 +143,12 @@ Services from the part2 materials https://devopswithdocker.com/part2/
     $ echo "hello, this really rocks" > hello.html
     $ curl hello.colasloth.com 
     hello, this really rocks
+
+# redmine
+    https://www.redmine.org/
+    https://www.adminer.org/
+    https://hub.docker.com/_/redmine
+    https://hub.docker.com/_/postgres
+    https://hub.docker.com/_/adminer
+
+    

@@ -1,0 +1,12 @@
+version: '3.5' 
+
+services:
+  db:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: example
+    container_name: db_redmine
+# restart: always was changed to unless-stopped 
+# that will keep the container running unless it’s stopped.
+# With always the stopped container is started after reboot for example.
