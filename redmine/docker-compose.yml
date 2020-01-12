@@ -16,11 +16,15 @@ services:
         - REDMINE_DB_PASSWORD=example
     ports: 
         - '9999:3000' 
+    volumes:
+        - files:/usr/src/redmine/files
+        # this is defined in redmine dockerfile as volume, so needed here
     depends_on: 
         - db
   
 volumes:
   database:
+  files: 
 # restart: always was changed to unless-stopped 
 # that will keep the container running unless it’s stopped.
 # With always the stopped container is started after reboot for example.
