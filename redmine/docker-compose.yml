@@ -9,7 +9,7 @@ services:
     container_name: db_redmine
     volumes:
         - database:/var/lib/postgresql/data
-redmine: 
+  redmine: 
     image: redmine
     environment: 
         - REDMINE_DB_POSTGRES=db
