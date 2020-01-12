@@ -9,6 +9,15 @@ services:
     container_name: db_redmine
     volumes:
         - database:/var/lib/postgresql/data
+redmine: 
+    image: redmine
+    environment: 
+        - REDMINE_DB_POSTGRES=db
+        - REDMINE_DB_PASSWORD=example
+    ports: 
+        - '9999:3000' 
+    depends_on: 
+        - db
   
 volumes:
   database:
