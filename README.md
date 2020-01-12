@@ -193,3 +193,13 @@ Services from the part2 materials https://devopswithdocker.com/part2/
     local               redmine_files
 
     Surf to http://localhost:9999/
+    make changes
+
+    check if different
+    $ docker diff $(docker-compose ps -q redmine) 
+
+    Add adminer to docker-compose.yml
+    Access adminer via: http://localhost:8083/
+    
+    ![see screenshotfile](./redmine/adminer-for-redmine.png?raw=true "./redmine/adminer-for-redmine.png")
+

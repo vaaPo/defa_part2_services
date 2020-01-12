@@ -21,7 +21,13 @@ services:
         # this is defined in redmine dockerfile as volume, so needed here
     depends_on: 
         - db
-  
+  adminer:
+    image: adminer
+    restart: always
+    environment:
+        - ADMINER_DESIGN=galkaev
+    ports:
+        - 8083:8080
 volumes:
   database:
   files: 
